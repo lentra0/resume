@@ -1,0 +1,25 @@
+{
+  "name": "resume-site",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://lentra0.github.io/resume",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "pdf": "node scripts/make-pdf.mjs",
+    "release": "npm run build && npm run pdf && node scripts/deploy.mjs"
+  },
+  "dependencies": {
+    "next": "15.5.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "puppeteer": "^23.11.1",
+    "typescript": "^5"
+  }
+}
